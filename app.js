@@ -29,6 +29,9 @@ app.get('/', function (req, res) {
 app.get('/photos', function (req, res) {
     res.render('photos', {title: 'Photos'});
 });
+app.get('/info', function (req, res) {
+    res.render('info', {title: 'Info'});
+});
 
 
 app.listen(app.get('port'), function () {
